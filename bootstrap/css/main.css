@@ -1,20 +1,49 @@
 @import "bootstrap.min.css";
 
-body {
-    background-color: lightblue;
+body.main {
+    background-color:#212121;
+    color: antiquewhite;
   }
 
-  .navbar-custom {
-    background-color:slategrey;
-  }
-  .navbar-custom .navbar-brand,
-        .navbar-custom .navbar-text {
-            color: green;
-        }
-  
-  h1 {
-    color: navy;
+  p {
     margin-left: 20px;
   }
 
-  
+  iframe {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .navbar{
+    background-color:rgb(82, 82, 82);
+    color: antiquewhite;
+  }
+  .navbar li > .nav-link{
+    color: antiquewhite;
+  }
+
+  .nav-item-center {
+    margin: auto;
+    
+  }
+
+  h1 {
+    color: antiquewhite;
+    
+  }
+  .card {
+    transition: transform 0.2s ease;
+  }
+  .card:hover {
+    transform: scale(1.1);
+  }
+  div.card {
+
+    background-color : rgb(82, 82, 82)
+    
+
+  }
+
+  div.card > div.card-body > p.card-text {
+    margin-left: 0px;
+  }

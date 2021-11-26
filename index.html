@@ -7,15 +7,16 @@
     <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"-->
     <!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script-->
     <link rel="stylesheet" href="bootstrap/css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <script src="bootstrap/js/bootstrap.min.js"></script>
 
-<body>
+<body class="main">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
+            
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -24,27 +25,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="home.html" target="content_frame">Home</a>
+                        <a class="nav-link" aria-current="page" href="home.html" target="content_frame">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Page1.html" target="content_frame">Link</a>
+                        <a class="nav-link" href="testpage.html" target="content_frame">Link</a>
                     </li>                    
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
+                    
                 </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
             </div>
         </div>
     </nav>
-
-    <div>
-        <iframe name="content_frame" src="home.html"></iframe>
-    </div>
-    
+    <iframe name="content_frame" src="home.html"></iframe>
 
 </body>
 
