@@ -4,9 +4,9 @@ contentDiv.append("hello");
 
 
 
-function home (){
+function getProject(target){
 
-    window.location = 'home.html'
+    window.location = '/Project_pages/' + target + '.html'
 
 
 
