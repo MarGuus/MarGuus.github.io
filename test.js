@@ -1,6 +1,6 @@
-var contentDiv = document.getElementById("test");
+// var contentDiv = document.getElementById("test");
 
-contentDiv.append("hello");
+// contentDiv.append("hello");
 
 
 
