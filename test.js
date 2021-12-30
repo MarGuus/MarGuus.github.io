@@ -9,7 +9,6 @@ window.onscroll = function() {
 
   //Scrolling UP
   if (prevScrollpos > currentScrollPos) {
-    console.log("test!");
     // If we are at the top of the page, move the content frame down to display content left behind the navbar
     if (currentScrollPos == 0){
         window.top.document.getElementById("content").style.marginTop = "60px";
