@@ -12,8 +12,21 @@ body.main {
   iframe {
     width: 100%;
     height: 100vh;
-  }
+    margin-top: 60px;
+    transition: margin-top 0.3s;
+    /* position: absolute; */
+  }::-webkit-scrollbar {  
+    display: none;
+  } 
 
+  #navbar {
+    background-color: #333; /* Black background color */
+    position: absolute; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  
   .navbar-expand-lg {
     background-color:rgb(82, 82, 82);
     color: antiquewhite;
@@ -35,12 +48,13 @@ body.main {
     transition: transform 0.2s ease;
   }
   .card:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
   }
   div.card {
 
     background-color : rgb(82, 82, 82);
-    margin-right: 25px;
+    margin-right: 10px;
+    margin-bottom: 25px;
 
   }
 
