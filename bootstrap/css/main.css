@@ -44,6 +44,11 @@ body.main {
 
   }
 
+  div.row > div.card {
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+
   div.card > div.card-body > p.card-text {
     margin-left: 0px;
   }
