@@ -63,10 +63,7 @@ function frameLoad(){
 
 
 //filter the project page elements 
-function filterProjects(current,type){
-
-  
-
+function filterProjects(type){
 
   var projectCards = document.getElementsByClassName(type);
 

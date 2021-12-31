@@ -1,6 +1,6 @@
 <html>
 <link rel="stylesheet" href="bootstrap/css/main.css">
-<script src="test.js"></script>
+<script src="mainScripts.js"></script>
 
 
 <body class="main">
@@ -11,64 +11,72 @@
             All Projects
         </h1>
 
+        <h3>Filters</h3>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="pageFilter3d" onchange="filterProjects('3D')" checked>
+            <label class="form-check-label" for="pageFilter3d">3D printing</label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="pageFiltersoftware" checked>
+            <label class="form-check-label" for="pageFiltersoftware">software</label>
+        </div>
+
+        <br>
+        <br>
+
         <div class="row">
+            <div class="col-md-4 3d">
+
+
+                <div class="card" onclick="getProject('mouse_charger')">
+                    <img src="/img/Mouse_charger_card.jpg" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse Charger</h5>
+                        <p class="card-text">a mouse charger</p>
+                    </div>
+                </div>
+            </div>
             <div class="col-md-4">
 
-        
-            <div class="card"  onclick="getProject('mouse_charger')">
-                <img src="/img/Mouse_charger_card.jpg"
-                    class="card-img-top" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Mouse Charger</h5>
-                    <p class="card-text">A 3D-printed mouse charger</p>                
+                <div class="card" onclick="getProject('mouse_charger')">
+                    <img src="/img/Mouse_charger_card.jpg" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse Charger</h5>
+                        <p class="card-text">a mouse charger</p>
+                    </div>
                 </div>
             </div>
-        </div> 
-        <div class="col-md-4">
+            <div class="col-md-4">
 
-            <div class="card"  onclick="getProject('mouse_charger')">
-                <img src="/img/Mouse_charger_card.jpg"
-                    class="card-img-top" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Mouse Charger</h5>
-                    <p class="card-text">A 3D-printed mouse charger</p>                
+                <div class="card" onclick="getProject('mouse_charger')">
+                    <img src="/img/Mouse_charger_card.jpg" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse Charger</h5>
+                        <p class="card-text">a mouse charger</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card" onclick="getProject('mouse_charger')">
+                    <img src="/img/Mouse_charger_card.jpg" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse Charger</h5>
+                        <p class="card-text">a mouse charger</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+
+                <div class="card" onclick="getProject('mouse_charger')">
+                    <img src="/img/Mouse_charger_card.jpg" class="card-img-top" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Mouse Charger</h5>
+                        <p class="card-text">a mouse charger</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-
-            <div class="card"  onclick="getProject('mouse_charger')">
-                <img src="/img/Mouse_charger_card.jpg"
-                    class="card-img-top" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Mouse Charger</h5>
-                    <p class="card-text">A 3D-printed mouse charger</p>                
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-
-            <div class="card"  onclick="getProject('mouse_charger')">
-                <img src="/img/Mouse_charger_card.jpg"
-                    class="card-img-top" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Mouse Charger</h5>
-                    <p class="card-text">A 3D-printed mouse charger</p>                
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-
-            <div class="card"  onclick="getProject('mouse_charger')">
-                <img src="/img/Mouse_charger_card.jpg"
-                    class="card-img-top" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Mouse Charger</h5>
-                    <p class="card-text">A 3D-printed mouse charger</p>                
-                </div>
-            </div>
-        </div>
-    </div>
 
 
     </div>
