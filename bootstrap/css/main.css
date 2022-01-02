@@ -56,18 +56,47 @@ body.main {
   }
 
 
-@keyframes hideCard {
-  100% {width: 0;}
-  100% {height: 0;}
-  100% {opacity: 0;}
-}
+  @keyframes hideCard {
+    /* 100% {width: 0;}
+    100% {height: 0;} */
+    100% {transform: scale(0);}
+    100% {opacity: 0;}
+    /* 5% {font-size: 3;}
+    10% {font-size: 0;}
+    100% {font-size: 0;} */
+  }
 
-  div.col-md-4[hide] {
+
+  div.col-md-4[hide="true"] {
     /* opacity: 0;
     transition: opacity 0.3s ease-in-out; */
     overflow:hidden;
     animation-name: hideCard;
-    animation-duration: 1s;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+
+  }
+
+  @keyframes showCard {
+    /* 0% {width: 0;} */
+    /* 0% {height: 0;} */
+    /* 100% {width: 33.33%;} */
+    /* 100% {height: 33.33%;} */
+    0% {opacity: 0;}
+    25% {opacity: 0;}
+    100% {opacity: 1;}
+        
+   0% {transform: scale(0);}
+   100% {transform: scale(1);}
+
+
+  }
+
+
+  div.col-md-4[hide="false"] {
+     
+    animation-name: showCard;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 
   }

@@ -68,35 +68,30 @@ function filterProjects(filter, type) {
   var projectCards = document.getElementsByClassName(type);
   var filterElement = document.getElementById(filter);
 
+  //SHOW CARDS
   if (filterElement.checked) {
     for (var i = 0; i < projectCards.length; i++) {
+      projectCards[i].removeEventListener('webkitAnimationEnd', hideCardDiv,false);
       projectCards[i].removeAttribute("style");
-      projectCards[i].removeAttribute("hide");
-
+      projectCards[i].setAttribute("hide", "false");
+  
     }
+
+    //HIDE CARDS  
   } else {
 
     for (var i = 0; i < projectCards.length; i++) {
-      projectCards[i].setAttribute("hide", "true");
-      //projectCards[i].animate({width: 0},500);
-      //projectCards[i].style.display = "none";
-
-      projectCards[i].addEventListener('webkitAnimationEnd', endFunction);
-
-
-
+      projectCards[i].setAttribute("hide", "true"); //add attribute for CCS animation
+      projectCards[i].addEventListener('webkitAnimationEnd', hideCardDiv);  //wait for collapse animation to end and hide the whole DIV
     }
 
-
-    function endFunction() {
-      this.style.display = "none";
-
-    }
+    
   }
 
+}
 
-
-
+function hideCardDiv() {
+  this.style.display = "none";
 }
 
 
