@@ -2,7 +2,7 @@
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function () {
   var currentScrollPos = window.pageYOffset;
-  
+
   var contentFrame = getContenFrame();
   var navbar = getNavbar();
 
@@ -29,7 +29,7 @@ window.onscroll = function () {
 
       //Check if navbar is expanded --> collapse if true
       if (navbarToggler.ariaExpanded == 'true') {
-        navbarToggler.click(); 
+        navbarToggler.click();
       }
     }
 
@@ -51,7 +51,7 @@ function getProject(target) {
 
 
 //Run on iframe refresh, handles the navbar positioning
-function frameLoad(){
+function frameLoad() {
 
   var contentFrame = getContenFrame();
   var navbar = getNavbar();
@@ -63,27 +63,52 @@ function frameLoad(){
 
 
 //filter the project page elements 
-function filterProjects(type){
+function filterProjects(filter, type) {
 
   var projectCards = document.getElementsByClassName(type);
+  var filterElement = document.getElementById(filter);
 
-    for (var i = 0; i < projectCards.length; i++){
-      projectCards[i].style.display = "none";
+  if (filterElement.checked) {
+    for (var i = 0; i < projectCards.length; i++) {
+      projectCards[i].removeAttribute("style");
+      projectCards[i].removeAttribute("hide");
+
     }
+  } else {
+
+    for (var i = 0; i < projectCards.length; i++) {
+      projectCards[i].setAttribute("hide", "true");
+      //projectCards[i].animate({width: 0},500);
+      //projectCards[i].style.display = "none";
+
+      projectCards[i].addEventListener('webkitAnimationEnd', endFunction);
+
+
+
+    }
+
+
+    function endFunction() {
+      this.style.display = "none";
+
+    }
+  }
+
+
 
 
 }
 
 
 //getter for content frame
-function getContenFrame(){
+function getContenFrame() {
 
   return window.top.document.getElementById("content");
 
 }
 
 //getter for navbar
-function getNavbar(){
+function getNavbar() {
 
   return window.top.document.getElementById("navbar");
 

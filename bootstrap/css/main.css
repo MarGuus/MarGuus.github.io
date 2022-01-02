@@ -48,10 +48,30 @@ body.main {
   }
   .card {
     transition: transform 0.2s ease;
+    
   }
   .card:hover {
     transform: scale(1.03);
+    
   }
+
+
+@keyframes hideCard {
+  100% {width: 0;}
+  100% {height: 0;}
+  100% {opacity: 0;}
+}
+
+  div.col-md-4[hide] {
+    /* opacity: 0;
+    transition: opacity 0.3s ease-in-out; */
+    overflow:hidden;
+    animation-name: hideCard;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+  }
+
   div.card {
 
     background-color : rgb(82, 82, 82);
